@@ -67,6 +67,7 @@ class ProfileController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * action create
      *
      * @param \WapplerSystems\Ncaext\Domain\Model\Profile $profile
+     * @--validate $profile WapplerSystems\Ncaext\Validator\PasswordValidator
      * @return void
      */
     public function createAction(\WapplerSystems\Ncaext\Domain\Model\Profile $profile)
@@ -92,6 +93,7 @@ class ProfileController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * action update
      *
      * @param \WapplerSystems\Ncaext\Domain\Model\Profile $profile
+     * @--validate $profile WapplerSystems\Ncaext\Validator\PasswordValidator
      * @return void
      */
     public function updateAction(\WapplerSystems\Ncaext\Domain\Model\Profile $profile)
