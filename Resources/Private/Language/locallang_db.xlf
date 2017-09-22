@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-09-21T22:50:04Z" product-name="ncaext">
+		<header/>
+		<body>
+			<trans-unit id="tx_ncaext_domain_model_user">
+				<source>Demo Ausgabe</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_user.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile">
+				<source>Profile</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile.firstname">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile.lastname">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile.password">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile.password_confirm">
+				<source>Password Confirm</source>
+			</trans-unit>
+			<trans-unit id="tx_ncaext_domain_model_profile.age">
+				<source>Age</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
