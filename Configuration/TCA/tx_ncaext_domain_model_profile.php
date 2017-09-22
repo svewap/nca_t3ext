@@ -161,7 +161,7 @@ return [
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 4,
-			    'eval' => 'int'
+			    'eval' => 'null,int'
 			]
 	    ],
     ],

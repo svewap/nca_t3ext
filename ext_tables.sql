@@ -11,7 +11,7 @@ CREATE TABLE tx_ncaext_domain_model_profile (
 	email varchar(255) DEFAULT '' NOT NULL,
 	password varchar(255) DEFAULT '' NOT NULL,
 	password_confirm varchar(255) DEFAULT '' NOT NULL,
-	age int(11) DEFAULT '0' NOT NULL,
+	age int(11) DEFAULT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
