@@ -1,0 +1,137 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:nca="http://typo3.org/ns/WapplerSystems/Ncaext/ViewHelpers"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+    <fieldset>
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-6">
+
+                <div class="form-group">
+
+
+                    <div class="col-xs-12">
+
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                            <f:form.textfield property="firstname" id="firstname" class="form-control" placeholder="{f:translate(key:'tx_ncaext_domain_model_profile.firstname')}{v:condition.form.isRequired(object:profile,property:'firstname', then:'*')}" />
+                        </div>
+                        <f:render partial="FieldErrors" arguments="{for: 'profile.firstname'}" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-6">
+
+                <div class="form-group">
+
+                    <div class="col-xs-12">
+
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                            <f:form.textfield property="lastname" id="lastname" class="form-control" placeholder="{f:translate(key:'tx_ncaext_domain_model_profile.lastname')}{v:condition.form.isRequired(object:profile,property:'firstname', then:'*')}" />
+                        </div>
+
+                        <f:render partial="FieldErrors" arguments="{for: 'profile.lastname'}" />
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="icon-prepend fa fa-envelope"></i></span>
+                            <f:form.textfield property="email" id="email" class="form-control" placeholder="{f:translate(key:'tx_ncaext_domain_model_profile.email')}{v:condition.form.isRequired(object:profile,property:'email', then:'*')}" />
+                        </div>
+
+                        <f:render partial="FieldErrors" arguments="{for: 'profile.email'}" />
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-6">
+
+                <div class="form-group">
+
+
+                    <div class="col-xs-12">
+
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                            <f:form.password property="password" id="password" class="form-control" placeholder="{f:translate(key:'tx_ncaext_domain_model_profile.password')}{v:condition.form.isRequired(object:profile,property:'password', then:'*')}" />
+                        </div>
+                        <f:render partial="FieldErrors" arguments="{for: 'profile.password'}" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-6">
+
+                <div class="form-group">
+
+                    <div class="col-xs-12">
+
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="icon-prepend fa fa-user"></i></span>
+                            <f:form.password property="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="{f:translate(key:'tx_ncaext_domain_model_profile.password_confirm')}{v:condition.form.isRequired(object:profile,property:'passwordConfirm', then:'*')}" />
+                        </div>
+
+                        <f:render partial="FieldErrors" arguments="{for: 'profile.passwordConfirm'}" />
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="icon-prepend fa fa-sort-numeric-asc"></i></span>
+                            <f:form.textfield property="age" id="age" class="form-control" placeholder="{f:translate(key:'tx_ncaext_domain_model_profile.age')}{v:condition.form.isRequired(object:profile,property:'age', then:'*')}" />
+                        </div>
+
+                        <f:render partial="FieldErrors" arguments="{for: 'profile.age'}" />
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </fieldset>
+
+</div>

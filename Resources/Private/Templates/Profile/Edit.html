@@ -1,0 +1,35 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout name="Default" />
+
+
+    <f:section name="main">
+
+		<f:flashMessages/>
+
+
+        <f:form action="update" id="profile-form" section="profile" controller="Profile" name="profile" class="form-horizontal" object="{profile}" method="post">
+
+            <h1><f:translate key="hdl.profile_edit" /></h1>
+
+
+			<f:render partial="Profile/Form" arguments="{profile:profile}" />
+
+
+            <fieldset>
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <f:form.button type="submit" class="btn btn-primary"><f:translate key="btn.submit" /></f:form.button>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </f:form>
+
+
+
+
+    </f:section>
+</div>

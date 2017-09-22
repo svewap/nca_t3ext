@@ -13,10 +13,10 @@
 				<source>Profile</source>
 			</trans-unit>
 			<trans-unit id="tx_ncaext_domain_model_profile.firstname">
-				<source>Firstname</source>
+				<source>First name</source>
 			</trans-unit>
 			<trans-unit id="tx_ncaext_domain_model_profile.lastname">
-				<source>Lastname</source>
+				<source>Last name</source>
 			</trans-unit>
 			<trans-unit id="tx_ncaext_domain_model_profile.email">
 				<source>Email</source>
@@ -25,11 +25,31 @@
 				<source>Password</source>
 			</trans-unit>
 			<trans-unit id="tx_ncaext_domain_model_profile.password_confirm">
-				<source>Password Confirm</source>
+				<source>Confirm password</source>
 			</trans-unit>
 			<trans-unit id="tx_ncaext_domain_model_profile.age">
 				<source>Age</source>
 			</trans-unit>
+			<trans-unit id="btn.submit">
+				<source>Submit</source>
+			</trans-unit>
+			<trans-unit id="btn.create">
+				<source>Create</source>
+			</trans-unit>
+			<trans-unit id="hdl.profile_edit">
+				<source>Edit profile</source>
+			</trans-unit>
+			<trans-unit id="hdl.profile_create">
+				<source>Create profile</source>
+			</trans-unit>
+			<trans-unit id="msg.formerror">
+				<source>An error occurred. Please correct your input.</source>
+			</trans-unit>
+			<!--
+			<trans-unit id="profile.age.1332933658">
+				<source>Please enter a number</source>
+			</trans-unit>
+			-->
 		</body>
 	</file>
 </xliff>

@@ -2,6 +2,16 @@
 
 namespace WapplerSystems\Ncaext\Domain\Model;
 
+/***
+ *
+ * This file is part of the "Ncaext" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ *  (c) 2017 Sven Wappler
+ *
+ ***/
 
 class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
@@ -33,7 +43,7 @@ class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * @var string
      * @validate NotEmpty
-     * @validate StringLength(minimum=8, maximum=22)
+     * @validate StringLength(minimum=2, maximum=22)
      */
     protected $password = '';
 
@@ -41,9 +51,17 @@ class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * @var string
      * @validate NotEmpty
-     * @validate StringLength(minimum=8, maximum=22)
+     * @validate StringLength(minimum=2, maximum=22)
      */
     protected $passwordConfirm = '';
+
+
+    /**
+     * @var int
+     * @validate \WapplerSystems\Ncaext\Validator\Number
+     */
+    protected $age = null;
+
 
 
     /**
@@ -124,6 +142,22 @@ class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setPasswordConfirm(string $passwordConfirm)
     {
         $this->passwordConfirm = $passwordConfirm;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    /**
+     * @param int $age
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
     }
 
 
